@@ -1,0 +1,129 @@
+#recipe-modal {
+  position: fixed;
+  top: 199px;
+  left: 447px;
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  width: 1027px;
+  height: 599px;
+  background: #fff;
+  padding: 22px 36px 30px 32px;
+  z-index: 10;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  z-index: 20;
+}
+
+.modal-categories-wrapper{
+    display: flex;
+}
+
+.modal-top,
+.modal-content-wrapper,
+.best-served-for,
+.best-served-for span {
+  display: flex;
+}
+
+.modal-top,
+.best-served-for {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-top h1 {
+  color: rgba(240, 151, 42, 1);
+  font: 38px "Roboto Slab", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.modal-top button {
+  width: 37px;
+  height: 37px;
+  background: none;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.modal-top {
+  margin-bottom: 22px;
+}
+
+.modal-close-icon {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(165, 165, 165, 1);
+  z-index: 1;
+}
+
+.modal-content-wrapper h3 {
+  color: rgba(150, 187, 54, 1);
+  font: 18px "Roboto Slab", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.modal-content-left {
+  min-width: 412px;
+  margin-right: 43px;
+}
+
+.modal-content-right {
+  min-width: 504px;
+}
+
+.modal-content-left .recipe-img {
+  width: 100%;
+  height: 243px;
+  border-radius: 5px;
+}
+
+.best-served-for {
+  margin: 22px 0 17px 0;
+}
+
+.best-served-for span {
+  color: rgba(255, 255, 255, 1);
+  font: 12px "Roboto Slab", serif;
+  background: rgba(150, 187, 54, 1);
+  padding: 4px 10px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+.modal-content-left p,
+.modal-content-right p {
+  color: #a5a5a5;
+  font: 16px "Roboto", sans-serif;
+  line-height: 21px;
+ }
+
+.modal-content-left p {
+  margin-bottom: 25px;
+  width: 412px;
+  height: 126px;
+}
+
+.modal-content-right p {
+  margin-top: 16px;
+  width: 504px;
+  height: 436px;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: red; */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+}
